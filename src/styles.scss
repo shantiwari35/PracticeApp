@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+$bd-violet: #9561fb;
+$bd-violet-bg: #712cf9;
+$bd-toc-color: var(--bs-emphasis-color);
+$bd-sidebar-link-bg: rgba(85, 33, 187, .5);
+$bd-callout-link: rgb(110, 168, 254);
+$bd-callout-code-color: #e685b5;
+$bd-pre-bg: #1b1f22;
+$bd-pre-border: #1b1f22;
+$bd-pre-color: #c9d1d9;
+
+
+:root {
+    --bd-violet: #{$bd-violet};
+    --bd-violet-bg: #{$bd-violet-bg};
+    --bd-toc-color: #{$bd-toc-color};
+    --bd-sidebar-link-bg: #{$bd-sidebar-link-bg};
+    --bd-callout-link: #{$bd-callout-link};
+    --bd-callout-code-color: #{$bd-callout-code-color};
+    --bd-pre-bg: #{$bd-pre-bg};
+    --bd-pre-border: #{$bd-pre-border};
+    --bd-pre-color: #{$bd-pre-color};
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}

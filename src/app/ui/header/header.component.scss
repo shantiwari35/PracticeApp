@@ -1,0 +1,26 @@
+nav {
+    background-color: var(--bd-violet-bg);
+    width:100vw;
+    height: auto;
+    
+}
+.navbar {
+  color: var(--bd-pre-color)!important; // Or use Bootstrap's white variable if imported
+    font-weight: 600;
+  * {
+    color: inherit !important;
+  }
+
+  a,
+  .nav-link,
+  .navbar-brand{
+    color: inherit !important;
+  }
+
+  .dropdown-item {
+    color: black !important;
+  }
+  .btn{
+  color:white !important;
+  }
+}
