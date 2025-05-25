@@ -1,0 +1,72 @@
+{
+  "flights": [
+    {
+      "id": 1,
+      "flightNumber": "AI101",
+      "origin": "Mumbai",
+      "destination": "Delhi",
+      "departureTime": "2025-05-25T08:00:00",
+      "arrivalTime": "2025-05-25T10:00:00",
+      "status": "Scheduled"
+    },
+    {
+      "id": 2,
+      "flightNumber": "AI202",
+      "origin": "Delhi",
+      "destination": "Bangalore",
+      "departureTime": "2025-05-25T12:00:00",
+      "arrivalTime": "2025-05-25T14:30:00",
+      "status": "Scheduled"
+    }
+  ],
+  "passengers": [
+    {
+      "id": 1,
+      "name": "Raj Mehta",
+      "passportNumber": "P1234567",
+      "checkedIn": false,
+      "flightId": 1,
+      "seatNumber": null
+    },
+    {
+      "id": 2,
+      "name": "Anjali Sharma",
+      "passportNumber": "P7654321",
+      "checkedIn": true,
+      "flightId": 1,
+      "seatNumber": "12A"
+    }
+  ],
+  "checkins": [
+    {
+      "id": 1,
+      "passengerId": 2,
+      "flightId": 1,
+      "seatNumber": "12A",
+      "baggageCount": 2,
+      "checkedInAt": "2025-05-25T07:30:00"
+    }
+  ],
+  "inflightServices": [
+    {
+      "id": 1,
+      "flightId": 1,
+      "mealOptions": ["Vegetarian", "Non-Vegetarian", "Vegan"],
+      "entertainment": ["Movie", "Music", "Games"]
+    }
+  ],
+  "admins": [
+    {
+      "id": 1,
+      "username": "admin1",
+      "password": "admin@123",
+      "role": "superadmin"
+    },
+    {
+      "id": 2,
+      "username": "staff1",
+      "password": "staff@123",
+      "role": "staff"
+    }
+  ]
+}

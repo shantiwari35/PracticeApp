@@ -1,0 +1,35 @@
+<div class="card w-50 m-auto text-center">
+    <div class="card-header">
+        Login here!
+    </div>
+    <div class="card-body">
+        <form [formGroup]="loginData" (ngSubmit)="login()">
+            <div class="mb-3 text-start">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" [ngClass]="{ 'is-invalid': loginData.get('email')?.errors && loginData.get('email')?.touched }" id="exampleInputEmail1" formControlName="email" name="email"
+                    required aria-describedby="emailHelp">
+                @if(loginData.get('email')?.errors && loginData.get('password')?.touched){
+                <div class="invalid-feedback">
+                    Please enter a valid email address.
+                </div>
+                }
+
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3 text-start">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" [ngClass]="{ 'is-invalid': loginData.get('password')?.errors && loginData.get('password')?.touched }" formControlName="password" name="password"
+                    id="exampleInputPassword1" required>
+                @if(loginData.get('password')?.errors && loginData.get('password')?.touched){
+
+                <div class="invalid-feedback">
+                    Please enter a valid password.
+                </div>
+                }
+
+            </div>
+
+            <button type="submit" class="btn btn-primary" [disabled]="loginData.invalid">Submit</button>
+        </form>
+    </div>
+</div>

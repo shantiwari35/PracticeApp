@@ -20,6 +20,10 @@ export class NavigationService {
     {
       name: 'Passengers',
       url: 'passengers'
+    },
+    {
+      name: 'Login',
+      url: 'login'
     }
   ];
 
