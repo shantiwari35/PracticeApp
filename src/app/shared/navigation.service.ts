@@ -24,6 +24,14 @@ export class NavigationService {
     {
       name: 'Login',
       url: 'login'
+    },
+    {
+      name: 'rxjs',
+      url: 'rxjs'
+    },
+    {
+      name: 'Subject/BehaviorSubject',
+      url: 'parent'
     }
   ];
 

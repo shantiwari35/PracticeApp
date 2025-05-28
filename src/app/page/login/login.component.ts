@@ -28,15 +28,15 @@ export class LoginComponent {
     });
 
     login() {
-        const isAuth = computed(() => AuthStore.isAuthenticated());
-        const isLoading = computed(() => AuthStore.isLoading());
-        const user = computed(() => AuthStore.user());
+        // const isAuth = computed(() => AuthStore.isAuthenticated());
+        // const isLoading = computed(() => AuthStore.isLoading());
+        // const user = computed(() => AuthStore.user());
         if (this.loginData.valid) {
             this.loginService.login(this.loginData.value).pipe().subscribe((res: any) => {
                 sessionStorage.setItem('token', res.token);
                 sessionStorage.setItem('user', JSON.stringify(res));
                 sessionStorage.setItem('refreshToken', res.refreshToken);
-                AuthStore.login(res);
+                // AuthStore.login(res);
             })
         }
 
