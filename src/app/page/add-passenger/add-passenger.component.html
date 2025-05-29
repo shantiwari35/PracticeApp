@@ -6,9 +6,41 @@
     <form [formGroup]="firstFormGroup" #firstForm>
       <ng-template matStepLabel>Fill out your name</ng-template>
       <mat-form-field>
-        <mat-label>Name</mat-label>
-        <input matInput placeholder="Last name, First name" formControlName="firstName" required>
+        <mat-label>First name</mat-label>
+        <input matInput placeholder="First name" formControlName="firstName" required>
       </mat-form-field>
+      <mat-form-field>
+        <mat-label>Last name</mat-label>
+        <input matInput placeholder="Last name" formControlName="lastName" required>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Age</mat-label>
+        <input matInput placeholder="Age" formControlName="age" required>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Gender</mat-label>
+        <mat-radio-group matInput formControlName="gender" required aria-labelledby="Select an option">
+          <mat-radio-button value="1">Option 1</mat-radio-button>
+          <mat-radio-button value="2">Option 2</mat-radio-button>
+        </mat-radio-group>
+      </mat-form-field>
+    
+        <mat-form-field>
+          <mat-label>Date of Birth</mat-label>
+          <input matInput formControlName="dob" [matDatepicker]="picker">
+          <mat-hint>MM/DD/YYYY</mat-hint>
+          <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+    
+     
+<mat-form-field>
+  <mat-label>Occupation</mat-label>
+  <mat-select placeholder="Select an option">
+    <mat-option  [value]="">Select Occupation</mat-option>
+    <mat-option *ngFor="let option of options()" [value]="option">{{ option }}</mat-option>
+  </mat-select>
+</mat-form-field>
       <div>
         <button mat-button matStepperNext>Next</button>
       </div>
@@ -18,8 +50,7 @@
     <form [formGroup]="secondFormGroup" #secondForm>
       <mat-form-field>
         <mat-label>Address</mat-label>
-        <input matInput formControlName="secondName" placeholder="Ex. 1 Main St, New York, NY"
-              required >
+        <input matInput formControlName="secondName" placeholder="Ex. 1 Main St, New York, NY" required>
       </mat-form-field>
       <div>
         <button mat-button matStepperPrevious>Back</button>

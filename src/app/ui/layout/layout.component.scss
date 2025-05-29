@@ -1,0 +1,33 @@
+.main {
+  flex: 1;
+  display: flex;
+  
+  overflow: hidden;
+}
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+app-sidebar {
+  width: 500px !important;
+  min-width: 500px;
+  background-color:var(--gray-600);
+  
+  overflow-y: auto;
+}
+.content {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  background-color: #f4f6f9;
+}
+app-header {
+  height: 60px;
+  background-color:var(--bd-violet-bg);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}

@@ -1,10 +1,7 @@
-<div class="layout">
-    <app-header></app-header>
-    <div class="main">
-        <app-sidenav></app-sidenav>
-        <div class="content">
-            <router-outlet></router-outlet>
-        </div>
+
+
+<div *ngIf="store.isloading()" class="overlay">
+        <mat-spinner></mat-spinner>
     </div>
-    
-</div>
+<router-outlet></router-outlet>
+

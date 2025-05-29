@@ -10,7 +10,7 @@ export class LoginService {
     constructor(private http: HttpClient) { }
 
     login(data:any) {
-        const user = { EmailId: data.email, Password: data.password };
-        return this.http.post(`${this.apiUrl}/api/JWT/login`, user);
+        const user = { emailId: data.email, password: data.password };
+        return this.http.post(`${this.apiUrl}/api/UserApp/login`, user);
     }
 }
